@@ -354,27 +354,48 @@ line{
     margin-right: 15vw;
 }
 
+#portfolio{
+    width:100%;
+    height:90vh;
+}
+
+#portfolio h2{
+    width: 18vw;
+    margin-left: 41vw;
+    margin-right: auto;
+    margin-top: 8vh;
+    margin-bottom: 7vh;
+    background-color: black;
+    color: white;
+    transform: rotate(3deg);
+    text-align: center;
+    font-size: 2em;
+}
+
+#portfolio p{
+    margin-left: 35vw;
+    margin-right: auto;
+}
+
 #projects{
     margin: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 20px 10px;
+    grid-gap: 20px 20px;
     justify-content: center;
-    background-color:#ddd;
-    width:auto;
-    height:90vh;
 }
 
 .portfolioContainer {
     position: relative;
-    width: 80%;
+    width: 100%;
+    border:1px solid black;
 }
 
 .image {
   opacity: 1;
   display: block;
-  width: 100%;
+  width: 80%;
   height: auto;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -400,7 +421,7 @@ line{
 }
 
 .text {
-  background-color: #4CAF50;
+  background-color: #740848;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
