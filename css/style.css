@@ -3,27 +3,36 @@ body {
     overflow-x: hidden;
     overflow-y: scroll;
     margin: 0;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
 }
 
 #header {
     background-color: white;
     width: 100vw;
-    height: 100vh;
+    height: 2vh;
     display: none;
+}
+
+#mainPicture {
+    height: 100vh;
+    background-image: url(../img/trial2.jpg);
+    background-size: cover;
 }
 
 .mytitle {
     font-size: 12em;
     padding: 0;
     margin: 0;
-    color: salmon;
-    padding-top: 20vh;
+    color: #707e00;
+    padding-top: 14vh;
 }
 
 #middle {
     padding: 0;
     margin-left: 30vw;
-    margin-top:5vw;
+    margin-top: 5vw;
     width: 40vw;
     height: 95vh;
     position: absolute;
@@ -42,22 +51,16 @@ body {
     position: absolute;
     z-index: 20;
     margin-left: -8vw;
+    margin-top: -9vh;
 }
 
 .arrow {
-    bottom: 5%;
-    left: 50%;
-    margin-top: 70vh;
-    margin-left: 20vw;
-    width: 10pvw;
-    height: 10vh;
+    margin-top: -12vh;
+    margin-left: 43vw;
+    margin-right: auto;
+    width: 20vw;
+    height: 5vh;
     cursor: pointer;
-    color: salmon;
-    border: 1px solid white;
-}
-
-.arrow:hover {
-    color: wheat;
 }
 
 .bounce {
@@ -76,24 +79,96 @@ body {
         -ms-transform: translateY(-30px);
         -webkit-transform: translateY(-30px);
         transform: translateY(-30px);
-
     }
     80% {
-     -moz-transform: translateY(0);
+        -moz-transform: translateY(0);
         -ms-transform: translateY(0);
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
-
 }
 
 #me {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
-    background-color: salmon;
+    background-color: white;
     z-index: 20;
-    position: absolute;
     display: none;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column img {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#expertise {
+    height: 90vh;
+    width: 100vw;
+    background-color: #ddd;
+    padding-top: 1vh;
+}
+
+.try{
+    margin-top:20vh;
+    background-color:pink;
+    width:60vw;
+    height:70vh;
+    margin-left:20%;
+    margin-right:20%;
+}
+
+#expertise h2 {
+    font-size: 2em;
+    width: 17vw;
+    margin-left: 44vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotate(2deg)
+}
+
+#shortIntro {
+    text-align: center;
+    display: block;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5vh;
+}
+
+.area {
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 150px 150px;
+    grid-gap: 30px 50px;
+    justify-content: center;
+}
+
+.area div {
+    padding-left: 30px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.area div h3{
+    width:15vw;
+    border-bottom: 1px solid black;
+    color:#740848;
+    font-weight:bold;
+}
+
+.area div p{
+    margin:0;
 }
 
 ul {
@@ -160,6 +235,9 @@ ul li:nth-child(6) {
     height: 100vh;
 }
 
+line{
+    stroke:red;
+}
 
 /* HEADER SECTION */
 
@@ -171,9 +249,9 @@ ul li:nth-child(6) {
     overflow: hidden;
     background-color: #fcfcfc;
     padding: 10px 10px;
-    position:fixed;
-    width:100%;
-    z-index:21;
+    position: fixed;
+    width: 100%;
+    z-index: 21;
     border-bottom: 1px solid darkgray;
 }
 
@@ -190,8 +268,7 @@ ul li:nth-child(6) {
 }
 
 .header a.logo {
-    font-size: 25px;
-    font-weight: bold;
+    width: 14%;
 }
 
 .header a:hover {
@@ -200,7 +277,7 @@ ul li:nth-child(6) {
 }
 
 .header a.active {
-    background-color: dodgerblue;
+    background-color: #740848;
     color: white;
 }
 
@@ -208,42 +285,203 @@ ul li:nth-child(6) {
     float: right;
 }
 
-.dropdown-btn, .dropdown-container .header-right{
+.dropdown-btn,
+.dropdown-container .header-right {
     display: none;
 }
+
+#first {
+    background-image: url(../img/trial2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainText {
+    padding-top: 10vh;
+}
+
+.mainText h1 {
+    background-color: black;
+    color: white;
+    width: 50vw;
+    padding: 10px 10px;
+    font-size: 6em;
+    margin-left: 26vw;
+    margin-right: auto;
+    text-align: center;
+}
+
+.mainText p {
+    background-color: black;
+    color: white;
+    width: 50vw;
+    padding: 10px 10px;
+    font-size: 3em;
+    margin-top: 5vh;
+    margin-left: 23vw;
+    margin-right: auto;
+    text-align: center;
+    transform: rotate(3deg)
+}
+
+#circle {
+    margin-top: 20vh;
+    margin-left: 15vw;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/Kea_Students_024-1.jpg);
+    background-size: cover;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+}
+
+.column h2 {
+    width: 25vw;
+    margin-right: 15vw;
+    margin-top: 18vh;
+    margin-bottom: 7vh;
+    background-color: black;
+    color: white;
+    transform: rotate(-2deg);
+    text-align: center;
+    font-size: 2em;
+}
+
+.column p {
+    margin-right: 15vw;
+}
+
+#projects{
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px 10px;
+    justify-content: center;
+    background-color:#ddd;
+    width:auto;
+    height:90vh;
+}
+
+.portfolioContainer {
+    position: relative;
+    width: 80%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.portfolioContainer:hover .image {
+  opacity: 0.3;
+}
+
+.portfolioContainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 600px) {
     .dropdown-btn {
         display: block;
-        float:right;
-        padding-right:33vw;
+        float: right;
     }
-
-    .hidden{
-        display:none;
+    .header a.logo {
+        width: 50%;
     }
-
-    .header-right a{
+    .hidden {
+        display: none;
+    }
+    .header-right a {
         padding-left: 20vw;
         padding-right: 20vw;
         margin-top: 5vh;
         margin-left: 20vw;
         margin-right: 20vw;
     }
-
-    .header{
-        width:60%;
-
+    .header {
+        width: 100%;
     }
-    .dropdown-container .header-right{
-        display:block;
+    .mainText {
+        padding-top: 10vh;
     }
-
+    .mainText h1 {
+        background-color: black;
+        color: white;
+        width: 72vw;
+        padding: 10px 10px;
+        font-size: 3em;
+        margin-left: 13vw;
+        margin-right: auto;
+        text-align: center;
+    }
+    .mainText p {
+        background-color: black;
+        color: white;
+        width: 72vw;
+        padding: 10px 10px;
+        font-size: 1.5em;
+        margin-top: 5vh;
+        margin-left: 13vw;
+        transform: rotate(6deg)
+    }
+    .arrow {
+        margin-top: 13vh;
+        margin-left: 32vw;
+        margin-right: auto;
+        width: 50vw;
+        height: 20vh;
+    }
+    #mainPicture {
+        height: 84vh;
+    }
+    .dropdown-container .header-right {
+        display: block;
+    }
     .container {
         display: inline-block;
         cursor: pointer;
     }
-
     .bar1,
     .bar2,
     .bar3 {
@@ -263,5 +501,49 @@ ul li:nth-child(6) {
     .change .bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
+    }
+    #circle {
+        margin-top: 10vh;
+        margin-left: 24vw;
+        margin-bottom: -10vh;
+        width: 200px;
+        height: 200px;
+    }
+    .column {
+        width: 100%;
+    }
+    .column h2 {
+        width: 40vw;
+        margin-left: 35vw;
+        margin-right: auto;
+        margin-top: 2vh;
+        margin-bottom: 5vh;
+    }
+    .column p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #expertise h2 {
+        font-size: 2em;
+        width: 59vw;
+        height: 7vh !important;
+        margin-left: 20vw;
+        margin-top: 32vh;
+    }
+    #expertise p {
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 8vh;
+    }
+    #expertise {
+        height: 210vh;
+        padding-top: 0vh;
+    }
+    .area {
+        display: grid;
+        grid-template-columns: 70vw;
+        grid-template-rows: auto;
+        grid-gap: 50px 50px;
     }
 }
