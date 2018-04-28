@@ -1,250 +1,21 @@
+/* Hi, I was expecting you here
+This is how I organise my css file, it is chronologically ordered by sections of the website */
+
 body {
     box-sizing: border-box;
     overflow-x: hidden;
     overflow-y: scroll;
     margin: 0;
     width: 100vw;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
+    height: auto;
+    font-family: "helvetica";
 }
-
-#header {
-    background-color: white;
-    width: 100vw;
-    height: 2vh;
-    display: none;
-}
-
-#mainPicture {
-    height: 100vh;
-    background-image: url(../img/trial2.jpg);
-    background-size: cover;
-}
-
-.mytitle {
-    font-size: 12em;
-    padding: 0;
-    margin: 0;
-    color: #707e00;
-    padding-top: 14vh;
-}
-
-#middle {
-    padding: 0;
-    margin-left: 30vw;
-    margin-top: 5vw;
-    width: 40vw;
-    height: 95vh;
-    position: absolute;
-    background-color: white;
-    z-index: 10;
-    border: 1px solid white;
-    box-shadow: -1px 2px 30px 30px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-}
-
-.move {
-    margin-left: 22vw;
-}
-
-.stay {
-    position: absolute;
-    z-index: 20;
-    margin-left: -8vw;
-    margin-top: -9vh;
-}
-
-.arrow {
-    margin-top: -12vh;
-    margin-left: 43vw;
-    margin-right: auto;
-    width: 20vw;
-    height: 5vh;
-    cursor: pointer;
-}
-
-.bounce {
-    -moz-animation: bounce 2s infinite;
-    -webkit-animation: bounce 2s infinite;
-    animation: bounce 4s infinite;
-}
-
-@keyframes bounce {
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
-        -moz-transform: translateY(-30px);
-        -ms-transform: translateY(-30px);
-        -webkit-transform: translateY(-30px);
-        transform: translateY(-30px);
-    }
-    80% {
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -webkit-transform: translateY(0);
-        transform: translateY(0);
-    }
-}
-
-#me {
-    height: 90vh;
-    width: 100vw;
-    background-color: white;
-    z-index: 20;
-    display: none;
-}
-
-.column {
-    float: left;
-    width: 50%;
-}
-
-.column img {
-    width: 40%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#expertise {
-    height: 90vh;
-    width: 100vw;
-    background-color: #ddd;
-    padding-top: 1vh;
-}
-
-.try{
-    margin-top:20vh;
-    background-color:pink;
-    width:60vw;
-    height:70vh;
-    margin-left:20%;
-    margin-right:20%;
-}
-
-#expertise h2 {
-    font-size: 2em;
-    width: 17vw;
-    margin-left: 44vw;
-    margin-right: auto;
-    background-color: black;
-    color: white;
-    text-align: center;
-    transform: rotate(2deg)
-}
-
-#shortIntro {
-    text-align: center;
-    display: block;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-bottom: 5vh;
-}
-
-.area {
-    display: grid;
-    grid-template-columns: 260px 260px 260px;
-    grid-template-rows: 150px 150px;
-    grid-gap: 30px 50px;
-    justify-content: center;
-}
-
-.area div {
-    padding-left: 30px;
-    border: 1px solid black;
-    background-color: white;
-}
-
-.area div h3{
-    width:15vw;
-    border-bottom: 1px solid black;
-    color:#740848;
-    font-weight:bold;
-}
-
-.area div p{
-    margin:0;
-}
-
-ul {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-}
-
-ul li {
-    list-style: none;
-    width: 6px;
-    height: 40px;
-    background: darkgray;
-    margin: 0 6px;
-    animation: animate .7s infinite alternate;
-}
-
-@keyframes animate {
-    0% {
-        transform: scaleY(1);
-    }
-    25% {
-        transform: scaleY(1);
-    }
-    50% {
-        transform: scaleY(1);
-    }
-    75% {
-        transform: scaleY(1);
-    }
-    100% {
-        transform: scaleY(3);
-    }
-}
-
-ul li:nth-child(1) {
-    animation-delay: .1s;
-}
-
-ul li:nth-child(2) {
-    animation-delay: .2s;
-}
-
-ul li:nth-child(3) {
-    animation-delay: .3s;
-}
-
-ul li:nth-child(4) {
-    animation-delay: .4s;
-}
-
-ul li:nth-child(5) {
-    animation-delay: .5s;
-}
-
-ul li:nth-child(6) {
-    animation-delay: .6s;
-}
-
-#loader {
-    width: 100vw;
-    height: 100vh;
-}
-
-line{
-    stroke:red;
-}
-
-/* HEADER SECTION */
 
 * {
     box-sizing: border-box;
 }
 
+/* START OF NAVBAR*/
 .header {
     overflow: hidden;
     background-color: #fcfcfc;
@@ -252,6 +23,7 @@ line{
     position: fixed;
     width: 100%;
     z-index: 21;
+    display: block;
     border-bottom: 1px solid darkgray;
 }
 
@@ -290,12 +62,20 @@ line{
     display: none;
 }
 
-#first {
+#header {
+    background-color: white;
+    width: 100vw;
+    height: 2vh;
+}
+
+/* END OF NAVBAR */
+
+/* START OF INTRO SECTION */
+
+#mainPicture {
+    height: 100vh;
     background-image: url(../img/trial2.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
 }
 
 .mainText {
@@ -307,7 +87,7 @@ line{
     color: white;
     width: 50vw;
     padding: 10px 10px;
-    font-size: 6em;
+    font-size: 5em;
     margin-left: 26vw;
     margin-right: auto;
     text-align: center;
@@ -316,18 +96,98 @@ line{
 .mainText p {
     background-color: black;
     color: white;
-    width: 50vw;
+    width: 55vw;
     padding: 10px 10px;
     font-size: 3em;
-    margin-top: 5vh;
+    margin-top: 13vh;
     margin-left: 23vw;
     margin-right: auto;
     text-align: center;
     transform: rotate(3deg)
 }
 
+
+/* arrow animation */
+
+.arrow {
+    margin-left: 43vw;
+    margin-right: auto;
+    width: 20vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    80% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* End of arrow animation */
+/* END OF INTRO SECTION */
+
+/* START OF ABOUT SECTION */
+#me {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 20;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column img {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn-resume {
+    background-color: white;
+    border: 1px solid #740848;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 20vw;
+    margin-top: 6vh;
+    cursor: pointer;
+}
+
+.btn-resume:hover {
+    background: #ddd;
+}
+
 #circle {
-    margin-top: 20vh;
+    margin-top: 18vh;
     margin-left: 15vw;
     width: 300px;
     height: 300px;
@@ -341,7 +201,7 @@ line{
 .column h2 {
     width: 25vw;
     margin-right: 15vw;
-    margin-top: 18vh;
+    margin-top: 15vh;
     margin-bottom: 7vh;
     background-color: black;
     color: white;
@@ -352,14 +212,103 @@ line{
 
 .column p {
     margin-right: 15vw;
+    line-height: 2;
 }
 
-#portfolio{
-    width:100%;
-    height:90vh;
+/* END OF ABOUT SECTION */
+
+/* START OF EXPERTISE SECTION */
+
+#expertise {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ddd;
+    padding-top: 1vh;
 }
 
-#portfolio h2{
+#expertise h2 {
+    font-size: 2em;
+    width: 17vw;
+    margin-left: 44vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotate(2deg)
+}
+
+
+#shortIntro {
+    text-align: center;
+    display: block;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5vh;
+    line-height: 2;
+}
+
+/* END OF EXPERTISE SECTION */
+
+/* START OF SKILLS SECTION */
+
+#skills {
+    width: 100vw;
+    height: 100vh;
+    padding-top:5vh;
+}
+
+#skills h2 {
+    font-size: 2em;
+    width: 17vw;
+    margin-left: 44vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotate(-3deg)
+}
+
+.try {
+    margin-left: 20%;
+    margin-right: 10%;
+    width: 60%;
+    margin-top: -15vh;
+}
+
+.area {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 160px 160px;
+    grid-gap: 30px 50px;
+    justify-content: center;
+}
+
+.area div {
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.area div h3 {
+    width: 20vw;
+    border-bottom: 1px solid black;
+    color: #740848;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* END OF SKILLS SECTION */
+
+/* START OF PORTFOLIO SECTION */
+
+#portfolio {
+    width: 100%;
+    height: 121vh;
+    background-color:#ddd;
+    padding-top:5vh;
+}
+
+#portfolio h2 {
     width: 18vw;
     margin-left: 41vw;
     margin-right: auto;
@@ -372,12 +321,12 @@ line{
     font-size: 2em;
 }
 
-#portfolio p{
+#portfolio p {
     margin-left: 35vw;
     margin-right: auto;
 }
 
-#projects{
+#projects {
     margin: 5%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -389,116 +338,133 @@ line{
 .portfolioContainer {
     position: relative;
     width: 100%;
-    border:1px solid black;
+    border: 1px solid black;
 }
 
 .image {
-  opacity: 1;
-  display: block;
-  width: 80%;
-  height: auto;
-  transition: .5s ease;
-  backface-visibility: hidden;
+    opacity: 1;
+    display: block;
+    width: 80%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .portfolioContainer:hover .image {
-  opacity: 0.3;
+    opacity: 0.3;
 }
 
 .portfolioContainer:hover .middle {
-  opacity: 1;
+    opacity: 1;
 }
 
 .text {
-  background-color: #740848;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
+    background-color: #740848;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
 }
 
 
+/* END OF PORTFOLIO SECTION */
 
+/* START OF CONTACT SECTION */
 
+#contact{
+    width:100vw;
+    height:100vh;
+}
 
+.contactContainer {
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
 
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
 
+input[type=submit] {
+    background-color: #740848;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
+#contact h2 {
+    width: 28vw;
+    margin-left: 41vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    transform: rotate(-1deg);
+    text-align: center;
+    font-size: 2em;
+}
 
-
-
-
-
-
+/* END OF CONTACT SECTION */
 
 @media screen and (max-width: 600px) {
+
+    .hidden {
+        display: none;
+    }
+
+    /* START OF MOBILE NAVBAR */
+
     .dropdown-btn {
         display: block;
         float: right;
     }
+
     .header a.logo {
         width: 50%;
     }
-    .hidden {
-        display: none;
-    }
-    .header-right a {
+
+        .header-right a {
         padding-left: 20vw;
         padding-right: 20vw;
         margin-top: 5vh;
         margin-left: 20vw;
         margin-right: 20vw;
     }
-    .header {
+
+        .header {
         width: 100%;
     }
-    .mainText {
-        padding-top: 10vh;
-    }
-    .mainText h1 {
-        background-color: black;
-        color: white;
-        width: 72vw;
-        padding: 10px 10px;
-        font-size: 3em;
-        margin-left: 13vw;
-        margin-right: auto;
-        text-align: center;
-    }
-    .mainText p {
-        background-color: black;
-        color: white;
-        width: 72vw;
-        padding: 10px 10px;
-        font-size: 1.5em;
-        margin-top: 5vh;
-        margin-left: 13vw;
-        transform: rotate(6deg)
-    }
-    .arrow {
-        margin-top: 13vh;
-        margin-left: 32vw;
-        margin-right: auto;
-        width: 50vw;
-        height: 20vh;
-    }
-    #mainPicture {
-        height: 84vh;
-    }
-    .dropdown-container .header-right {
+
+      .dropdown-container .header-right {
         display: block;
     }
+
     .container {
         display: inline-block;
         cursor: pointer;
@@ -523,6 +489,51 @@ line{
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
     }
+
+    /* START OF MOBILE MAIN SECTION */
+
+    #mainPicture {
+        height: 100vh;
+    }
+
+    .mainText h1 {
+        background-color: black;
+        color: white;
+        width: 82vw;
+        padding: 10px 10px;
+        font-size: 3em;
+        margin-top:15vh;
+        margin-left: 10vw;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .mainText p {
+        background-color: black;
+        color: white;
+        width: 72vw;
+        padding: 10px 10px;
+        font-size: 1.5em;
+        margin-left: 13vw;
+        transform: rotate(6deg)
+    }
+
+        .arrow {
+        margin-top: 13vh;
+        margin-left: 32vw;
+        margin-right: auto;
+        width: 50vw;
+        height: 20vh;
+    }
+
+    /* END OF MAIN SECTION */
+
+    /* START OF ABOUT SECTION */
+
+    #me{
+        height:135vh;
+    }
+
     #circle {
         margin-top: 10vh;
         margin-left: 24vw;
@@ -530,41 +541,69 @@ line{
         width: 200px;
         height: 200px;
     }
+
+    .btn-resume{
+        display:none;
+    }
+
     .column {
         width: 100%;
     }
+
     .column h2 {
-        width: 40vw;
-        margin-left: 35vw;
+        width: 60vw;
+        margin-left: 18vw;
         margin-right: auto;
         margin-top: 2vh;
         margin-bottom: 5vh;
     }
+
     .column p {
         margin-left: 10%;
         margin-right: 10%;
     }
+
+    /* END OF MOBILE ABOUT SECTION */
+
+    /* START OF MOBILE EXPERTISE SECTION */
+
     #expertise h2 {
         font-size: 2em;
         width: 59vw;
-        height: 7vh !important;
         margin-left: 20vw;
-        margin-top: 32vh;
+        margin-top:8vh;
     }
-    #expertise p {
+
+    #shortIntro{
         text-align: left;
         margin-left: 10%;
         margin-right: 10%;
-        margin-bottom: 8vh;
+        margin-bottom: 5vh;
+        margin-top:5vh;
     }
+
     #expertise {
-        height: 210vh;
-        padding-top: 0vh;
+        height: 260vh;
     }
+
     .area {
-        display: grid;
         grid-template-columns: 70vw;
         grid-template-rows: auto;
         grid-gap: 50px 50px;
     }
+
+    .area div h3{
+        width:55vw;
+    }
+
+    .areaText{
+        padding-bottom: 3vh;
+    }
+
+    /* END OF MOBILE EXPERTISE SECTION */
+
+
+
+
+
 }
