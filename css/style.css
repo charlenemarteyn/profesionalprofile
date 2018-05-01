@@ -15,7 +15,9 @@ body {
     box-sizing: border-box;
 }
 
+
 /* START OF NAVBAR*/
+
 .header {
     overflow: hidden;
     background-color: #fcfcfc;
@@ -35,26 +37,31 @@ body {
     text-decoration: none;
     font-size: 18px;
     line-height: 25px;
-    border-radius: 4px;
-    padding: 10px 45px;
+    padding: 10px 29px;
 }
 
 .header a.logo {
-    width: 14%;
+    width: 12%;
+    margin-right:17vw;
 }
 
-.header a:hover {
-    background-color: #ddd;
+.language a{
+    font-size:0.8em;
+    padding: 5px 9px;
+    line-height: 40px;
+}
+
+.language a:first-child{
+    margin-left:16vw;
+}
+
+.language a:hover{
+    color:#740848;
+}
+
+.hoverA:hover {
+    border-bottom: 2px solid #740848;
     color: black;
-}
-
-.header a.active {
-    background-color: #740848;
-    color: white;
-}
-
-.header-right {
-    float: right;
 }
 
 .dropdown-btn,
@@ -68,7 +75,9 @@ body {
     height: 2vh;
 }
 
+
 /* END OF NAVBAR */
+
 
 /* START OF INTRO SECTION */
 
@@ -91,6 +100,7 @@ body {
     margin-left: 26vw;
     margin-right: auto;
     text-align: center;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .mainText p {
@@ -103,7 +113,8 @@ body {
     margin-left: 23vw;
     margin-right: auto;
     text-align: center;
-    transform: rotate(3deg)
+    transform: rotate(3deg);
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 
@@ -144,9 +155,13 @@ body {
 
 
 /* End of arrow animation */
+
+
 /* END OF INTRO SECTION */
 
+
 /* START OF ABOUT SECTION */
+
 #me {
     height: 100vh;
     width: 100vw;
@@ -196,6 +211,7 @@ body {
     -moz-border-radius: 150px;
     -webkit-border-radius: 150px;
     border-radius: 150px;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .column h2 {
@@ -208,14 +224,18 @@ body {
     transform: rotate(-2deg);
     text-align: center;
     font-size: 2em;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .column p {
     margin-right: 15vw;
     line-height: 2;
+    text-align: justify;
 }
 
+
 /* END OF ABOUT SECTION */
+
 
 /* START OF EXPERTISE SECTION */
 
@@ -234,9 +254,9 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    transform: rotate(2deg)
+    transform: rotate(2deg);
+    box-shadow: 0 10px 6px -6px #777;
 }
-
 
 #shortIntro {
     text-align: center;
@@ -247,14 +267,16 @@ body {
     line-height: 2;
 }
 
+
 /* END OF EXPERTISE SECTION */
+
 
 /* START OF SKILLS SECTION */
 
 #skills {
     width: 100vw;
     height: 100vh;
-    padding-top:5vh;
+    padding-top: 5vh;
 }
 
 #skills h2 {
@@ -265,7 +287,8 @@ body {
     background-color: black;
     color: white;
     text-align: center;
-    transform: rotate(-3deg)
+    transform: rotate(-3deg);
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .try {
@@ -287,6 +310,7 @@ body {
     padding: 10px 15px;
     border: 1px solid black;
     background-color: white;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .area div h3 {
@@ -297,23 +321,25 @@ body {
     padding-bottom: 10px;
 }
 
+
 /* END OF SKILLS SECTION */
+
 
 /* START OF PORTFOLIO SECTION */
 
 #portfolio {
     width: 100%;
-    height: 121vh;
-    background-color:#ddd;
-    padding-top:5vh;
+    height: 125vh;
+    background-color: #ddd;
+    padding-top: 3vh;
 }
 
 #portfolio h2 {
     width: 18vw;
     margin-left: 41vw;
     margin-right: auto;
-    margin-top: 8vh;
-    margin-bottom: 7vh;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
     background-color: black;
     color: white;
     transform: rotate(3deg);
@@ -339,6 +365,7 @@ body {
     position: relative;
     width: 100%;
     border: 1px solid black;
+    box-shadow: 0 10px 6px -6px #777;
 }
 
 .image {
@@ -376,14 +403,145 @@ body {
     padding: 16px 32px;
 }
 
+.bouton{
+    text-decoration: none;
+}
+
+/* Start of modal */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    height:95%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+#projectTitle{
+    margin-left: 10%;
+    margin-right:10%;
+}
+.projectInfo{
+    content: "";
+    display: table;
+    clear: both;
+    width:100%;
+    margin-left:24%;
+}
+
+.taskDescription{
+    content: "";
+    display: table;
+    clear: both;
+    width:100%;
+    border-bottom: 1px solid black;
+}
+
+.projectInfoContent{
+    float: left;
+    width: 12%;
+}
+
+.projectInfoContent:last-child{
+    width:30%;
+}
+
+.fullimage{
+    width:80%;
+    margin-left:10%;
+}
+
+.taskDescriptionContent{
+    float:left;
+    width:26%;
+    padding:10px 20px;
+}
+
+.taskDescriptionContent:first-child{
+    margin-left:13%;
+    padding:10px 0px;
+}
+
+.contribution:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.contribution{
+    border-bottom: 1px solid black;
+}
+
+.contribution .column{
+    padding:20px 20px;
+
+}
+
+.linksToProject{
+    display:grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 10px 10px;
+
+}
+
+.layer{
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.modalContainer{
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 0 10px 6px -6px #777;
+}
+/* End of modal */
 
 /* END OF PORTFOLIO SECTION */
 
+
 /* START OF CONTACT SECTION */
 
-#contact{
-    width:100vw;
-    height:100vh;
+#contact {
+    width: 100vw;
+    height: 85vh;
 }
 
 .contactContainer {
@@ -416,55 +574,50 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #ddd;
 }
 
 #contact h2 {
     width: 28vw;
-    margin-left: 41vw;
+    margin-left: 37vw;
+    margin-top: 5vh;
     margin-right: auto;
     background-color: black;
     color: white;
     transform: rotate(-1deg);
     text-align: center;
     font-size: 2em;
+    box-shadow: 0 10px 6px -6px #777;
 }
+
 
 /* END OF CONTACT SECTION */
 
 @media screen and (max-width: 600px) {
-
     .hidden {
         display: none;
     }
-
     /* START OF MOBILE NAVBAR */
-
     .dropdown-btn {
         display: block;
         float: right;
     }
-
     .header a.logo {
         width: 50%;
     }
-
-        .header-right a {
+    .header-right a {
         padding-left: 20vw;
         padding-right: 20vw;
         margin-top: 5vh;
         margin-left: 20vw;
         margin-right: 20vw;
     }
-
-        .header {
+    .header {
         width: 100%;
     }
-
-      .dropdown-container .header-right {
+    .dropdown-container .header-right {
         display: block;
     }
-
     .container {
         display: inline-block;
         cursor: pointer;
@@ -490,24 +643,25 @@ input[type=submit]:hover {
         transform: rotate(45deg) translate(-8px, -8px);
     }
 
-    /* START OF MOBILE MAIN SECTION */
+    .hoverA:hover{
+       background-color:#ddd;
+    }
 
+    /* START OF MOBILE MAIN SECTION */
     #mainPicture {
         height: 100vh;
     }
-
     .mainText h1 {
         background-color: black;
         color: white;
         width: 82vw;
         padding: 10px 10px;
         font-size: 3em;
-        margin-top:15vh;
+        margin-top: 15vh;
         margin-left: 10vw;
         margin-right: auto;
         text-align: center;
     }
-
     .mainText p {
         background-color: black;
         color: white;
@@ -517,23 +671,18 @@ input[type=submit]:hover {
         margin-left: 13vw;
         transform: rotate(6deg)
     }
-
-        .arrow {
+    .arrow {
         margin-top: 13vh;
         margin-left: 32vw;
         margin-right: auto;
         width: 50vw;
         height: 20vh;
     }
-
     /* END OF MAIN SECTION */
-
     /* START OF ABOUT SECTION */
-
-    #me{
-        height:135vh;
+    #me {
+        height: 135vh;
     }
-
     #circle {
         margin-top: 10vh;
         margin-left: 24vw;
@@ -541,49 +690,42 @@ input[type=submit]:hover {
         width: 200px;
         height: 200px;
     }
-
-    .btn-resume{
-        display:none;
+    .btn-resume {
+        display: none;
     }
-
     .column {
         width: 100%;
     }
-
     .column h2 {
         width: 60vw;
         margin-left: 18vw;
         margin-right: auto;
         margin-top: 2vh;
-        margin-bottom: 5vh;
+        margin-bottom: 7vh;
     }
-
     .column p {
         margin-left: 10%;
         margin-right: 10%;
     }
-
     /* END OF MOBILE ABOUT SECTION */
-
     /* START OF MOBILE EXPERTISE SECTION */
-
     #expertise h2 {
         font-size: 2em;
         width: 59vw;
         margin-left: 20vw;
-        margin-top:8vh;
+        margin-top: 8vh;
     }
 
-    #shortIntro{
+    #shortIntro {
         text-align: left;
         margin-left: 10%;
         margin-right: 10%;
         margin-bottom: 5vh;
-        margin-top:5vh;
+        margin-top: 5vh;
     }
 
     #expertise {
-        height: 260vh;
+        height: 280vh;
     }
 
     .area {
@@ -591,19 +733,78 @@ input[type=submit]:hover {
         grid-template-rows: auto;
         grid-gap: 50px 50px;
     }
-
-    .area div h3{
-        width:55vw;
+    .area div h3 {
+        width: 55vw;
     }
-
-    .areaText{
+    .areaText {
         padding-bottom: 3vh;
     }
-
     /* END OF MOBILE EXPERTISE SECTION */
+    /* START OF MOBILE SKILLS SECTION */
+    #skills {
+        display: none;
+    }
+    /*END OF MOBILE SKILLS SECTION */
+    /* START OF MOBILE PORTFOLIO SECTION */
+    #portfolio {
+        width: 100%;
+        height: 210vh;
+        background-color: white;
+    }
 
+    #portfolio h2 {
+        width: 58vw;
+        margin-left: 21vw;
+        margin-top:0vh;
+        margin-bottom: 4vh;
+    }
 
+    #portfolio p {
+        margin-left: 16%;
+        margin-right: 12%;
+        margin-bottom: 4vh;
+    }
 
+    #projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 
+    .portfolioContainer {
+        width: 85%;
+        margin-left: 8%;
+        margin-right: auto;
+    }
+    .notMobile {
+        display: none;
+    }
+    .middle {
+        opacity: 1;
+    }
 
+    /* END OF PORTFOLIO SECTION */
+
+    /* START OF CONTACT SECTION */
+
+    #contact {
+    padding-top:3vh;
+    height: 91vh;
+    background-color:#ddd;
+}
+
+.contactContainer {
+    border-radius: 5px;
+    padding: 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#contact h2 {
+    width: 88vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 7vh;
+    margin-right: auto;
+}
+    /* END OF CONTACT SECTION */
 }

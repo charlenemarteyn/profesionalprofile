@@ -1,0 +1,31 @@
+{
+    "chart":[
+    {
+        "skill" : "html",
+        "knowledge" : 3
+    },
+    {
+        "skill" : "CSS",
+        "knowledge" : 3
+    },
+    {
+        "skill" : "JavaScript",
+        "knowledge" : 2
+    },
+    {
+        "skill" : "Photoshop",
+        "knowledge" : 1.2
+    },
+    {
+        "skill" : "Illustrator",
+        "knowledge" : 1.5
+    },
+    {
+        "skill" : "Unity",
+        "knowledge" : 1.1
+    },
+    {
+        "skill" : PHP,
+        "knowledge" : 0.8
+    },
+]}

@@ -1,0 +1,680 @@
+/* Hi, I was expecting you here
+This is how I organise my css file, it is chronologically ordered by sections of the website */
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    width: 100vw;
+    height: auto;
+    font-family: "helvetica";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* START OF NAVBAR*/
+
+.header {
+    overflow: hidden;
+    background-color: #fcfcfc;
+    padding: 10px 10px;
+    position: fixed;
+    width: 100%;
+    z-index: 21;
+    display: block;
+    border-bottom: 1px solid darkgray;
+}
+
+.header a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 29px;
+}
+
+.header a.logo {
+    width: 12%;
+    margin-right:13vw;
+}
+
+.language a{
+    font-size:0.8em;
+    padding: 5px 9px;
+    line-height: 40px;
+}
+
+.language a:first-child{
+    margin-left:13vw;
+}
+
+.language a:hover{
+    color:#740848;
+}
+
+.hoverA:hover {
+    border-bottom: 2px solid #740848;
+    color: black;
+}
+
+.dropdown-btn,
+.dropdown-container .header-right {
+    display: none;
+}
+
+#header {
+    background-color: white;
+    width: 100vw;
+    height: 2vh;
+}
+
+
+/* END OF NAVBAR */
+
+
+/* START OF INTRO SECTION */
+
+#mainPicture {
+    height: 100vh;
+    background-image: url(../img/trial2.jpg);
+    background-size: cover;
+}
+
+.mainText {
+    padding-top: 10vh;
+}
+
+.mainText h1 {
+    background-color: black;
+    color: white;
+    width: 50vw;
+    padding: 10px 10px;
+    font-size: 5em;
+    margin-left: 26vw;
+    margin-right: auto;
+    text-align: center;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.mainText p {
+    background-color: black;
+    color: white;
+    width: 55vw;
+    padding: 10px 10px;
+    font-size: 3em;
+    margin-top: 13vh;
+    margin-left: 23vw;
+    margin-right: auto;
+    text-align: center;
+    transform: rotate(3deg);
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+
+/* arrow animation */
+
+.arrow {
+    margin-left: 43vw;
+    margin-right: auto;
+    width: 20vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 4s infinite;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    80% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+
+/* End of arrow animation */
+
+
+/* END OF INTRO SECTION */
+
+
+/* START OF ABOUT SECTION */
+
+#me {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    z-index: 20;
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+.column img {
+    width: 40%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn-resume {
+    background-color: white;
+    border: 1px solid #740848;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 22vw;
+    margin-top: 6vh;
+    cursor: pointer;
+}
+
+.btn-resume:hover {
+    background: #ddd;
+}
+
+#circle {
+    margin-top: 18vh;
+    margin-left: 15vw;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/Kea_Students_024-1.jpg);
+    background-size: cover;
+    -moz-border-radius: 150px;
+    -webkit-border-radius: 150px;
+    border-radius: 150px;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.column h2 {
+    width: 30vw;
+    margin-right: 15vw;
+    margin-top: 10vh;
+    margin-bottom: 7vh;
+    background-color: black;
+    color: white;
+    transform: rotate(-2deg);
+    text-align: center;
+    font-size: 2em;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.column p {
+    margin-right: 15vw;
+    line-height: 2;
+    text-align: justify;
+}
+
+
+/* END OF ABOUT SECTION */
+
+
+/* START OF EXPERTISE SECTION */
+
+#expertise {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ddd;
+    padding-top: 1vh;
+}
+
+#expertise h2 {
+    font-size: 2em;
+    width: 27vw;
+    margin-left: 38vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotate(2deg);
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+#shortIntro {
+    text-align: center;
+    display: block;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5vh;
+    line-height: 2;
+}
+
+.area {
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    grid-template-rows: 170px 170px;
+    grid-gap: 30px 50px;
+    justify-content: center;
+}
+
+.area div {
+    padding: 10px 15px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.area div h3 {
+    width: 20vw;
+    border-bottom: 1px solid black;
+    color: #740848;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+/* END OF EXPERTISE SECTION */
+
+
+/* START OF SKILLS SECTION */
+
+#skills {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 5vh;
+}
+
+#skills h2 {
+    font-size: 2em;
+    width: 27vw;
+    margin-left: 37vw;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotate(-3deg);
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.try {
+    margin-left: 20%;
+    margin-right: 10%;
+    width: 60%;
+    margin-top: -15vh;
+}
+
+
+/* END OF SKILLS SECTION */
+
+
+/* START OF PORTFOLIO SECTION */
+
+#portfolio {
+    width: 100%;
+    height: 125vh;
+    background-color: #ddd;
+    padding-top: 3vh;
+}
+
+#portfolio h2 {
+    width: 18vw;
+    margin-left: 41vw;
+    margin-right: auto;
+    margin-top: 2vh;
+    margin-bottom: 6vh;
+    background-color: black;
+    color: white;
+    transform: rotate(3deg);
+    text-align: center;
+    font-size: 2em;
+}
+
+#portfolio p {
+    margin-left: 35vw;
+    margin-right: auto;
+}
+
+#projects {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px 20px;
+    justify-content: center;
+}
+
+.portfolioContainer {
+    position: relative;
+    width: 100%;
+    border: 1px solid black;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 80%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.portfolioContainer:hover .image {
+    opacity: 0.3;
+}
+
+.portfolioContainer:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #740848;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+
+}
+
+
+/* END OF PORTFOLIO SECTION */
+
+
+/* START OF CONTACT SECTION */
+
+#contact {
+    width: 100vw;
+    height: 85vh;
+}
+
+.contactContainer {
+    border-radius: 5px;
+    padding: 20px;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #740848;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #ddd;
+}
+
+#contact h2 {
+    width: 38vw;
+    margin-left: 31vw;
+    margin-top: 5vh;
+    margin-right: auto;
+    background-color: black;
+    color: white;
+    transform: rotate(-1deg);
+    text-align: center;
+    font-size: 2em;
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+
+/* END OF CONTACT SECTION */
+
+@media screen and (max-width: 600px) {
+    .hidden {
+        display: none;
+    }
+    /* START OF MOBILE NAVBAR */
+    .dropdown-btn {
+        display: block;
+        float: right;
+    }
+    .header a.logo {
+        width: 50%;
+    }
+    .header-right a {
+        padding-left: 20vw;
+        padding-right: 20vw;
+        margin-top: 5vh;
+        margin-left: 20vw;
+        margin-right: 20vw;
+    }
+    .header {
+        width: 100%;
+    }
+    .dropdown-container .header-right {
+        display: block;
+    }
+    .container {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .bar1,
+    .bar2,
+    .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
+    }
+    .change .bar2 {
+        opacity: 0;
+    }
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
+
+    .hoverA:hover{
+       background-color:#ddd;
+    }
+
+    /* START OF MOBILE MAIN SECTION */
+    #mainPicture {
+        height: 100vh;
+    }
+    .mainText h1 {
+        background-color: black;
+        color: white;
+        width: 82vw;
+        padding: 10px 10px;
+        font-size: 3em;
+        margin-top: 15vh;
+        margin-left: 10vw;
+        margin-right: auto;
+        text-align: center;
+    }
+    .mainText p {
+        background-color: black;
+        color: white;
+        width: 72vw;
+        padding: 10px 10px;
+        font-size: 1.5em;
+        margin-left: 13vw;
+        transform: rotate(6deg)
+    }
+    .arrow {
+        margin-top: 13vh;
+        margin-left: 32vw;
+        margin-right: auto;
+        width: 50vw;
+        height: 20vh;
+    }
+    /* END OF MAIN SECTION */
+    /* START OF ABOUT SECTION */
+    #me {
+        height: 135vh;
+    }
+    #circle {
+        margin-top: 10vh;
+        margin-left: 24vw;
+        margin-bottom: -10vh;
+        width: 200px;
+        height: 200px;
+    }
+    .btn-resume {
+        display: none;
+    }
+    .column {
+        width: 100%;
+    }
+    .column h2 {
+        width: 60vw;
+        margin-left: 18vw;
+        margin-right: auto;
+        margin-top: 2vh;
+        margin-bottom: 7vh;
+    }
+    .column p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    /* END OF MOBILE ABOUT SECTION */
+    /* START OF MOBILE EXPERTISE SECTION */
+    #expertise h2 {
+        font-size: 2em;
+        width: 59vw;
+        margin-left: 20vw;
+        margin-top: 8vh;
+    }
+
+    #shortIntro {
+        text-align: left;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    #expertise {
+        height: 280vh;
+    }
+
+    .area {
+        grid-template-columns: 70vw;
+        grid-template-rows: auto;
+        grid-gap: 50px 50px;
+    }
+    .area div h3 {
+        width: 55vw;
+    }
+    .areaText {
+        padding-bottom: 3vh;
+    }
+    /* END OF MOBILE EXPERTISE SECTION */
+    /* START OF MOBILE SKILLS SECTION */
+    #skills {
+        display: none;
+    }
+    /*END OF MOBILE SKILLS SECTION */
+    /* START OF MOBILE PORTFOLIO SECTION */
+    #portfolio {
+        width: 100%;
+        height: 210vh;
+        background-color: white;
+    }
+
+    #portfolio h2 {
+        width: 58vw;
+        margin-left: 21vw;
+        margin-top:0vh;
+        margin-bottom: 4vh;
+    }
+
+    #portfolio p {
+        margin-left: 16%;
+        margin-right: 12%;
+        margin-bottom: 4vh;
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .portfolioContainer {
+        width: 85%;
+        margin-left: 8%;
+        margin-right: auto;
+    }
+    .notMobile {
+        display: none;
+    }
+    .middle {
+        opacity: 1;
+    }
+
+    /* END OF PORTFOLIO SECTION */
+
+    /* START OF CONTACT SECTION */
+
+    #contact {
+    padding-top:3vh;
+    height: 91vh;
+    background-color:#ddd;
+}
+
+.contactContainer {
+    border-radius: 5px;
+    padding: 0px;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#contact h2 {
+    width: 88vw;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    margin-bottom: 7vh;
+    margin-right: auto;
+}
+    /* END OF CONTACT SECTION */
+}

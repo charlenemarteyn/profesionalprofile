@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <style>
+        svg{
+            width:700px;
+            height:400px;
+            background:pink;
+        }
+        .rectangle{
+            fill:lightblue;
+            stroke:black;
+        }
+
+        .smoke{
+            fill:grey;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <svg id="first"></svg>
+
+
+
+    <script src="Snap.svg-0.5.1/dist/snap.svg-min.js"></script>
+    <script>
+        let s = Snap("#first");
+
+        let windowtopright = s.rect(480, 225, 50, 150)
+        let windowtopright2 = s.rect(420, 225, 50, 150)
+        let windowtopright3 = s.rect(540, 225, 50, 150)
+        let windowtopright4 = s.rect(600, 225, 50, 150)
+        let windowtopright5 = s.rect(660, 225, 50, 150)
+        let windowtopright6 = s.rect(360, 225, 50, 150)
+        let windowtopright7 = s.rect(300, 225, 50, 150)
+        let windowtopright8 = s.rect(600, 225, 50, 150)
+        let linewindowtopleft = s.line(70, 360, 600, 360)
+        let linewindowdownleft = s.line(70, 60, 70, 362)
+        let linewindowtopleft2 = s.line(70, 300, 400, 300)
+
+
+
+        let smokedownleft = s.circle(244, 76,25)
+        let chimney = s.rect(230, 100, 30, 50)
+        let roof = s.polygon(10, 10, 10, 50)
+        let handle = s.circle(340, 350, 5)
+        let windowtopleft = s.rect(230, 230, 50, 50)
+        let windowdownleft = s.rect(230, 320, 50, 50)
+
+        let linewindowtopright = s.line(355, 230, 355, 280)
+
+        let smokedownright = s.circle(260, 55,22)
+        let smoketopleft = s.circle(235, 38,25)
+        let openwindow = s.rect(378.5, 230.5, 1, 49)
+
+        roof.attr({
+            fill:"#331900",
+            stroke:"black",
+            strokeWidth:1,
+            points:"300,80 420,200 180,200"
+        })
+
+
+
+        chimney.attr({
+            fill:"#FFE4C4",
+            stroke:"black",
+            strokeWidth:1,
+        })
+
+
+        windowtopleft.addClass("rectangle")
+        windowtopright.addClass("rectangle")
+        windowdownleft.addClass("rectangle")
+
+        linewindowtopleft.attr({
+            stroke: "red",
+            strokeWidth: 4
+        })
+
+          linewindowtopleft2.attr({
+            stroke: "red",
+            strokeWidth: 4
+        })
+
+        linewindowtopright.attr({
+            stroke: "red",
+            strokeWidth: 4
+        })
+
+        linewindowdownleft.attr({
+            stroke: "red",
+            strokeWidth: 4
+        })
+
+        smokedownleft.addClass("smoke")
+        smokedownright.addClass("smoke")
+        smoketopleft.addClass("smoke")
+
+        smokedownleft.animate({
+            cx:244,
+            cy:70,
+            fill:"green"
+        },3000, mina.easeout)
+
+        smokedownright.animate({
+            cx:260,
+            cy:43,
+            fill:"green"
+        },2000, mina.easeout)
+
+        smoketopleft.animate({
+            cx:235,
+            cy:32,
+            fill:"green"
+        },2500, mina.easeout)
+
+
+    </script>
+</body>
+</html>
